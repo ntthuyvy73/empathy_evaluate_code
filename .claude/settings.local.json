@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs wc -l)",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import importlib.util as u; [print\\(p, 'INSTALLED' if u.find_spec\\(p\\) else 'MISSING'\\) for p in ['jieba','fugashi','kiwipiepy','konlpy']]\")",
+      "Bash(python mindeval/scripts/translate_to_en.py --datasets simpsydial psydial soulchat cpscycoun smile kokorochat --dry_run)",
+      "Bash(PYTHONPATH=. python mindeval/scripts/translate_to_en.py --datasets simpsydial psydial soulchat cpscycoun smile kokorochat --dry_run)",
+      "Bash(PYTHONPATH=. timeout 120 python mindeval/scripts/translate_to_en.py --datasets simpsydial --limit 21)",
+      "Bash(PYTHONPATH=. timeout 150 python mindeval/scripts/translate_to_en.py --datasets simpsydial --limit 21)",
+      "Bash(mkdir -p \"C:/Users/ntthu/AppData/Local/Temp/claude/H--Vy-Paper-Empathy-Code-mind-eval-mind-eval/19d8c850-c3b8-476a-b083-eba1d9a78b47/scratchpad\")",
+      "Bash(PYTHONPATH=. python mindeval/scripts/translate_to_en.py --datasets simpsydial psydial soulchat cpscycoun smile kokorochat --max_workers 5)",
+      "Bash(PYTHONPATH=. python mindeval/scripts/translate_to_en.py --datasets psydial kokorochat)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('mindeval/scripts/translate_to_en.py',encoding='utf-8'\\).read\\(\\)\\)\")",
+      "Bash(PYTHONPATH=. python mindeval/scripts/translate_to_en.py --datasets psydial kokorochat --chunk_size 40)"
+    ]
+  }
+}

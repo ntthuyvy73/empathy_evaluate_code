@@ -1,0 +1,8 @@
+{
+  "source_language": "zh",
+  "max_dialogues": 10,
+  "options_run": "C",
+  "results": {
+    "option_c": "data\\simpsydial\\test\\option_c_judgments.jsonl"
+  }
+}

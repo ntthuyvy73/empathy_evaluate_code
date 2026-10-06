@@ -1,0 +1,7 @@
+dataset,language,approach,n_valid,client_lex_coverage,client_valence_emo_mean,client_valence_emo_std,client_valence_nec
+simpsydial,zh,B,200,0.6882,0.1664,0.1381,0.085
+psydial,zh,B,200,0.694,0.1646,0.1424,0.0562
+soulchat,zh,B,200,0.6737,0.1551,0.1439,0.076
+cpsycoun,zh,B,182,0.662,0.1406,0.1315,0.0172
+smile,zh,B,198,0.69,0.1629,0.142,0.0865
+kokorochat,ja,B,200,0.6755,0.1776,0.1367,0.0477

@@ -1,0 +1,9 @@
+venv*
+__pycache__*
+dev*
+ducttape_outputs*
+artifacts*
+dawn_ducttape_outputs*
+mind-evaldata/KokoroChat/raw/Kokorochat_dialogues.jsonl
+data/cactus/raw/cactus.json
+data/SoulChat/raw/SoulChatCorpus-sft-multi-Turn.json

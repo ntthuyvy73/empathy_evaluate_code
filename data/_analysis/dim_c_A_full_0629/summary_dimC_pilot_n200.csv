@@ -1,0 +1,12 @@
+dataset,language,approach,n_valid,client_lex_coverage,client_valence_emo_mean,client_valence_emo_std,client_valence_nec
+cactus,en,B,200,0.6915,0.1463,0.1384,0.0494
+annomi,en,B,110,0.6554,0.1599,0.1334,0.0271
+psy_insight,en,B,141,0.6793,0.1527,0.1173,-0.0001
+esconv,en,B,200,0.6995,0.1659,0.1392,0.0817
+simpsydial_zh,zh,A,200,0.2664,0.1418,0.2448,-0.0548
+psydial_zh,zh,A,200,0.2659,0.1427,0.2372,-0.0111
+soulchat_zh,zh,A,200,0.2624,0.1273,0.2443,-0.048
+cpsycoun_zh,zh,A,188,0.2595,0.1473,0.2553,-0.0575
+smile_zh,zh,A,198,0.2627,0.1444,0.247,-0.0708
+kokorochat_ja,ja,A,200,0.2288,0.078,0.3011,-0.0119
+kmi_ko,ko,A,200,0.307,0.191,0.2089,0.0256

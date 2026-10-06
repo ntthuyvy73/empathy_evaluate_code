@@ -1,0 +1,69 @@
+{
+  "translation": {
+    "model": "gpt-5.1",
+    "api_key": "your-openai-api-key-here",
+    "api_base": "https://api.openai.com/v1",
+    "temperature": 0.3,
+    "timeout": 60,
+    "max_retries": 3
+  },
+  "judges": {
+    "gpt": {
+      "model": "gpt-5.1",
+      "api_key": "your-openai-api-key-here",
+      "api_base": "https://api.openai.com/v1",
+      "temperature": 0.3,
+      "timeout": 60,
+      "max_retries": 3
+    },
+    "claude": {
+      "model": "anthropic/claude-sonnet-4-6",
+      "api_key": "your-anthropic-api-key-here",
+      "temperature": 0.3,
+      "timeout": 180,
+      "max_retries": 3
+    },
+    "qwen": {
+      "model": "openai/qwen3-235b-a22b",
+      "api_key": "your-dashscope-api-key-here",
+      "api_base": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "temperature": 0.3,
+      "max_tokens": 1024,
+      "timeout": 120,
+      "max_retries": 3,
+      "extra_body": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "profile_extraction": {
+    "model": "gpt-5.1",
+    "api_key": "your-openai-api-key-here",
+    "api_base": "https://api.openai.com/v1",
+    "temperature": 0.0,
+    "timeout": 60,
+    "max_retries": 3
+  },
+  "google_translate": {
+    "credentials_path": "/path/to/google-credentials.json",
+    "project_id": "your-google-cloud-project",
+    "location": "global"
+  },
+  "session_monitor": {
+    "target_judge": "claude_9router",
+    "threshold_percent": 50,
+    "unrestricted_window": {
+      "start_hour": 0,
+      "end_hour": 3
+    },
+    "provider": {
+      "url": "http://localhost:20128/api/session__PLACEHOLDER_CONFIRM_ENDPOINT",
+      "method": "GET",
+      "headers": {
+        "Authorization": "Bearer __PLACEHOLDER_DASHBOARD_TOKEN__"
+      },
+      "json_path": "usage_percent__PLACEHOLDER",
+      "timeout": 10
+    }
+  }
+}

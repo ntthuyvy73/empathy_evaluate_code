@@ -1,0 +1,27 @@
+=== PILOT SUMMARY ===
+  Total dialogues:  20
+  Skipped (too short): 0
+  Processed (arc valid): 20
+
+  Client valence UED metrics (mean over valid dialogues):
+    client_valence_emo_avg_disp_length                 +3.9608  (n=20)
+    client_valence_emo_avg_peak_dist                   +0.2106  (n=20)
+    client_valence_emo_high_disp_length                +3.8429  (n=20)
+    client_valence_emo_high_peak_dist                  +0.2116  (n=20)
+    client_valence_emo_high_recovery_rate              +0.1146  (n=20)
+    client_valence_emo_high_rise_rate                  +0.1278  (n=20)
+    client_valence_emo_low_disp_length                 +4.2875  (n=20)
+    client_valence_emo_low_peak_dist                   +0.2125  (n=20)
+    client_valence_emo_low_recovery_rate               +0.1127  (n=20)
+    client_valence_emo_low_rise_rate                   +0.1235  (n=20)
+    client_valence_emo_mean                            +0.1718  (n=20)
+    client_valence_emo_recovery_rate                   +0.1146  (n=20)
+    client_valence_emo_rise_rate                       +0.1263  (n=20)
+    client_valence_emo_std                             +0.1333  (n=20)
+
+  Lexicon coverage:
+    Client   — mean: 69.41%
+    Counselor — mean: 74.95%
+
+  Happy-ending rates (client valence NEC > 0):
+    Valence happy-ending: 70.0%

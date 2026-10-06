@@ -1,0 +1,22 @@
+dataset,language,comparison,effect_type,setting_A,setting_B,n,mean_A,mean_B,mean_delta (A-B),MAD,Pearson_r,Spearman_r,Spearman_p,Kendall_tau,Kendall_p,paired_t,paired_p,sig_diff
+simpsydial,zh,S1 vs S3 (Translation),translation_effect,S1,S3,20,3.2600,3.2850,-0.0250,0.1600,0.0904,0.1330,0.5762,0.1052,0.5683,-0.5088,0.6168,False
+simpsydial,zh,S2 vs S3 (Judge Language),judge_lang_effect,S2,S3,20,3.2150,3.2850,-0.0700,0.1550,0.2850,0.1379,0.5622,0.0898,0.6124,-1.6404,0.1174,False
+simpsydial,zh,S1 vs S2 (Combined),combined_effect,S1,S2,20,3.2600,3.2150,0.0450,0.1300,0.3660,0.3686,0.1097,0.2952,0.1030,1.1523,0.2635,False
+PsyDial,zh,S1 vs S3 (Translation),translation_effect,S1,S3,20,3.0175,3.0125,0.0050,0.2200,0.5480,0.6109,0.0042,0.4620,0.0067,0.0784,0.9383,False
+PsyDial,zh,S2 vs S3 (Judge Language),judge_lang_effect,S2,S3,20,2.9350,3.0125,-0.0775,0.1575,0.7798,0.8095,0.0000,0.6497,0.0001,-1.8704,0.0769,False
+PsyDial,zh,S1 vs S2 (Combined),combined_effect,S1,S2,20,3.0175,2.9350,0.0825,0.2225,0.5777,0.5243,0.0176,0.3796,0.0266,1.4552,0.1619,False
+SoulChat,zh,S1 vs S3 (Translation),translation_effect,S1,S3,20,2.7850,2.8150,-0.0300,0.1700,0.6849,0.7063,0.0005,0.5487,0.0015,-0.5729,0.5734,False
+SoulChat,zh,S2 vs S3 (Judge Language),judge_lang_effect,S2,S3,20,2.8475,2.8150,0.0325,0.1175,0.7446,0.7536,0.0001,0.5988,0.0006,0.8418,0.4104,False
+SoulChat,zh,S1 vs S2 (Combined),combined_effect,S1,S2,20,2.7850,2.8475,-0.0625,0.2175,0.6045,0.5696,0.0087,0.4546,0.0082,-1.0771,0.2949,False
+KMI,ko,S1 vs S3 (Translation),translation_effect,S1,S3,20,2.6725,2.9275,-0.2550,0.2850,0.6234,0.5616,0.0100,0.4434,0.0112,-4.7299,0.0001,True
+KMI,ko,S2 vs S3 (Judge Language),judge_lang_effect,S2,S3,20,2.9475,2.9275,0.0200,0.1900,0.3521,0.3017,0.1961,0.2346,0.1916,0.3656,0.7187,False
+KMI,ko,S1 vs S2 (Combined),combined_effect,S1,S2,20,2.6725,2.9475,-0.2750,0.2900,0.5711,0.5777,0.0076,0.4246,0.0160,-4.8287,0.0001,True
+CPsyCoun,zh,S1 vs S3 (Translation),translation_effect,S1,S3,20,2.9825,3.0200,-0.0375,0.1275,0.6047,0.5985,0.0053,0.5062,0.0050,-1.0670,0.2993,False
+CPsyCoun,zh,S2 vs S3 (Judge Language),judge_lang_effect,S2,S3,20,3.0300,3.0200,0.0100,0.1550,0.3722,0.3665,0.1119,0.3171,0.0769,0.2104,0.8356,False
+CPsyCoun,zh,S1 vs S2 (Combined),combined_effect,S1,S2,20,2.9825,3.0300,-0.0475,0.1725,0.1022,0.1905,0.4212,0.1491,0.4121,-1.0029,0.3285,False
+KokoroChat,ja,S1 vs S3 (Translation),translation_effect,S1,S3,20,3.1400,3.0100,0.1300,0.2800,0.1315,0.0223,0.9255,0.0309,0.8625,1.6233,0.1210,False
+KokoroChat,ja,S2 vs S3 (Judge Language),judge_lang_effect,S2,S3,20,3.2750,3.0100,0.2650,0.2700,0.7121,0.5974,0.0054,0.4721,0.0072,6.8694,0.0000,True
+KokoroChat,ja,S1 vs S2 (Combined),combined_effect,S1,S2,20,3.1400,3.2750,-0.1350,0.3050,0.1546,0.2681,0.2530,0.2098,0.2486,-1.6743,0.1105,False
+smile,zh,S1 vs S3 (Translation),translation_effect,S1,S3,20,2.7200,2.6500,0.0700,0.3850,0.3788,0.3892,0.0899,0.3170,0.0578,0.5565,0.5844,False
+smile,zh,S2 vs S3 (Judge Language),judge_lang_effect,S2,S3,20,2.5850,2.6500,-0.0650,0.2100,0.7849,0.7989,0.0000,0.6389,0.0002,-1.0669,0.2994,False
+smile,zh,S1 vs S2 (Combined),combined_effect,S1,S2,20,2.7200,2.5850,0.1350,0.3750,0.3520,0.3638,0.1148,0.3061,0.0670,1.0342,0.3140,False

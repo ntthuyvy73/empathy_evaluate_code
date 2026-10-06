@@ -1,0 +1,16 @@
+=== SANITY CHECK: CACTUS pilot vs. 'Feel the Difference' (Wang et al. 2025) ===
+  Pilot size: 20 dialogues
+  NOTE: Wang et al. used NRC-VAD v1 (scale 0-1); this run uses v2.1 (scale -1 to +1).
+  Direct numeric comparison will show large diffs — focus on direction & ranking, not absolute values.
+  Tolerance: +-20% (for reference only)
+
+  valence_emo_mean                         yours=+0.1718  ref=+0.2761  diff=37.8%  [CHECK]
+  valence_emo_std                          yours=+0.1333  ref=+0.1480  diff=9.9%  [OK]
+  valence_emo_avg_peak_dist                yours=+0.2106  ref=+0.0779  diff=170.3%  [CHECK]
+  valence_emo_avg_disp_length              yours=+3.9608  ref=+4.2282  diff=6.3%  [OK]
+  valence_emo_rise_rate                    yours=+0.1263  ref=+0.0332  diff=280.4%  [CHECK]
+  valence_emo_recovery_rate                yours=+0.1146  ref=+0.0325  diff=252.8%  [CHECK]
+  valence_client_emo_mean                  yours=+0.1718  ref=+0.2339  diff=26.5%  [CHECK]
+  valence_client_emo_std                   yours=+0.1333  ref=+0.1518  diff=12.2%  [OK]
+  valence_client_emo_rise_rate             yours=+0.1263  ref=+0.0349  diff=261.9%  [CHECK]
+  valence_client_emo_recovery_rate         yours=+0.1146  ref=+0.0369  diff=210.7%  [CHECK]

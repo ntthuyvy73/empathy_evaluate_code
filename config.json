@@ -1,0 +1,126 @@
+{
+  "translation": {
+    "model": "openai/cx/gpt-5.5",
+    "api_key": "sk-bbf5e2fe4d2d01df-e1c94q-788d804b",
+    "api_base": "http://localhost:20128/v1",    
+    "temperature": 0.3,
+    "timeout": 300,
+    "max_retries": 3
+  },
+  "judges": {
+    "gemini": {
+      "model": "openai/ag/gemini-pro-agent",
+      "api_key": "sk-d16ea73d82bd6190-qesc75-bf7818f8",
+      "api_base": "http://ai.tpm.id.vn:20128/v1",
+      "temperature": 0.3,
+      "timeout": 300
+    },
+    "gemini_pro": {
+      "model": "gemini/gemini-2.5-pro",
+      "api_key": "AQ.Ab8RN6LBZaYNoSScG8QVsLnRp2JaK0drz_mIljxb4NEQJiMyww",
+      "temperature": 0.3,
+      "timeout": 180,
+      "max_retries": 3
+    },
+    "gpt": {
+      "model": "gpt-5.5",
+      "api_key": "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",
+      "api_base": "https://api.openai.com/v1",
+      "temperature": 0.3,
+      "timeout": 120,
+      "max_retries": 3
+    },
+    "gpt_9router": {
+      "model": "openai/cx/gpt-5.5",
+      "api_key": "sk-bbf5e2fe4d2d01df-e1c94q-788d804b",
+      "api_base": "http://localhost:20128/v1",
+      "timeout": 60,
+      "max_retries": 3
+    },
+    "claude": {
+      "model": "anthropic/claude-sonnet-4-6",
+      "api_key": "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",
+      "temperature": 0.3,
+      "timeout": 180,
+      "max_retries": 3
+    },
+    "claude_9router": {
+      "model": "openai/cc/claude-sonnet-4-6",
+      "api_key": "sk-bbf5e2fe4d2d01df-e1c94q-788d804b",
+      "api_base": "http://localhost:20128/v1",
+      "temperature": 0.3,
+      "timeout": 300,
+      "max_retries": 3
+    },
+    "claude_batch_save": {
+      "model": "anthropic/claude-sonnet-4-6",
+      "api_key": "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",
+      "temperature": 0.3,
+      "timeout": 180, 
+      "max_retries": 3,
+      "use_anthropic_batch": true,
+      "thinking_budget_tokens": 8000
+    },
+    "claude_haiku": {
+      "model": "anthropic/claude-haiku-4-5-20251001",
+      "api_key": "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",
+      "temperature": 0.3,
+      "max_tokens": 1024,
+      "timeout": 120,
+      "max_retries": 3,
+      "use_anthropic_batch": true
+    },
+    "qwen": {
+      "model": "openai/qwen3-235b-a22b-instruct-2507",
+      "api_key": "sk-ws-H.IEHLXY.b7hP.MEUCIQD2gwXLqjrYqzRKJUoi_cLxumlbj0uC0fxQF2kTFMR4GAIgXbSkfAK7hCAd47hjMmCarVux5Vh4Yi66OM4FN0hljh0",
+      "api_base": "https://ws-couikier1t5pmtwf.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1",
+      "temperature": 0.3,
+      "max_tokens": 1024,
+      "timeout": 120,
+      "max_retries": 3,
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    "qwen_thinking": {
+      "model": "openai/qwen3-235b-a22b-thinking-2507",
+      "api_key": "sk-ws-H.IEPMIL.7NBH.MEUCIQCxwDvDe2enxm8y8S28t4jM1Ng_EsNht62n9J_8PleTYwIgP3fG51rI3YRkqrbP3PujpDXWNxNf0IwAg7WHQx6Wpxg",
+      "api_base": "https://ws-rt50wci9aevl9rk5.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1",
+      "temperature": 0.3,
+      "max_tokens": 8192,
+      "timeout": 300,
+      "max_retries": 3
+    }
+  },
+  "session_monitor_2": {
+    "target_judge": "claude_9router",
+    "threshold_percent": 28,
+    "action": "wait",
+    "wait_poll_seconds": 30,
+    "unrestricted_windows": [
+      { "start_hour": 17, "end_hour": 18 },
+      { "start_hour": 23, "end_hour": 4 }
+    ],
+    "provider": {
+      "type": "router9",
+      "base_url": "http://localhost:20128",
+      "connection_id": "774640e0-e343-4810-9314-56e627343de2",
+      "quota_key": "session (5h)",
+      "refresh_seconds": 10,
+      "timeout": 10
+    }
+  },
+  "profile_extraction": {
+    "model": "gpt-5.1",
+    "api_key": "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",
+    "api_base": "https://api.openai.com/v1",
+    "temperature": 0.0,
+    "timeout": 60,
+    "max_retries": 3
+  },
+  "google_translate": {
+    "credentials_path": "/path/to/google-credentials.json",
+    "project_id": "your-google-cloud-project",
+    "location": "global"
+  }
+}
